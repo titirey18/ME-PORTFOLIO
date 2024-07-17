@@ -1,24 +1,23 @@
+import { Sobre_mi } from './src/components/About Me/about'
+import { Bienvenida } from './src/components/Bienvenida'
+import { headernav } from './src/components/header/header'
+import { My_proyects } from './src/components/Proyects/Proyect'
+import { Mis_Skills } from './src/components/Skills/Skills'
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+headernav()
 
-setupCounter(document.querySelector('#counter'))
+const main = () => {
+  const mainElement = document.querySelector('main')
+
+  if (mainElement) {
+    mainElement.append(Bienvenida())
+    mainElement.append(Sobre_mi())
+    mainElement.append(Mis_Skills())
+    mainElement.append(My_proyects())
+  } else {
+    console.error('Main element not found')
+  }
+}
+
+main()

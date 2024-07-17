@@ -1,0 +1,41 @@
+#About_me {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-200);
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--padding-300);
+  background-color: var(--color-100);
+}
+
+h3 {
+  display: flex;
+  justify-content: start;
+  color: var(--color-600);
+  font-size: x-large;
+}
+
+.parrafo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 50%;
+  color: var(--color-600);
+}
+
+@media (max-width: 768px) {
+  .About_me {
+    flex-direction: column;
+    height: auto;
+    gap: var(--gap-200);
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: large;
+  }
+
+  p {
+    font-size: small;
+  }
+}

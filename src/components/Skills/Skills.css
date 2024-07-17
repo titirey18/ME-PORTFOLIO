@@ -1,0 +1,48 @@
+#Skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--padding-500);
+  justify-content: center;
+  gap: var(--gap-400);
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-100);
+}
+
+h3 {
+  display: flex;
+  justify-content: start;
+  color: var(--color-600);
+  font-size: x-large;
+}
+
+.ImgSkills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.ImgSkills > img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .Skills {
+    flex-direction: column;
+    height: auto;
+    gap: var(--gap-200);
+    padding: 20px;
+  }
+  h3 {
+    font-size: large;
+  }
+  .ImgSkills > img {
+    width: 50px;
+    height: 50px;
+  }
+}

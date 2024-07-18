@@ -7,9 +7,11 @@ export const headernav = () => {
   const Aboutnav = document.createElement('li')
   const Projectsnav = document.createElement('li')
   const Skillsnav = document.createElement('li')
+  const Experiencenav = document.createElement('li')
   const Contactnav = document.createElement('li')
   const About = document.createElement('a')
   const Projects = document.createElement('a')
+  const Experience = document.createElement('a')
   const Skills = document.createElement('a')
   const Contact = document.createElement('a')
 
@@ -20,21 +22,25 @@ export const headernav = () => {
   About.textContent = 'About Me'
   Projects.textContent = 'Proyects'
   Skills.textContent = 'Skills'
+  Experience.textContent = 'Experience'
   Contact.textContent = 'Contact'
   name.href = '#'
   About.href = '#About_me'
   Projects.href = '#Proyects'
   Skills.href = '#Skills'
-  Contact.href = '#contact'
+  Experience.href = '#Experience'
+  Contact.href = '#Contact'
 
   header.append(name)
   header.append(ul)
   ul.appendChild(Aboutnav)
   ul.appendChild(Projectsnav)
   ul.appendChild(Skillsnav)
+  ul.appendChild(Experiencenav)
   ul.appendChild(Contactnav)
   Aboutnav.appendChild(About)
   Projectsnav.appendChild(Projects)
   Skillsnav.appendChild(Skills)
+  Experiencenav.appendChild(Experience)
   Contactnav.appendChild(Contact)
 }

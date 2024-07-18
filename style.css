@@ -64,6 +64,10 @@ section {
   animation: animation 2.5s forwards;
 }
 
+#Contact {
+  animation: animationSection 2.5s ease-in-out forwards;
+}
+
 @keyframes animationSection {
   0% {
     opacity: 0;

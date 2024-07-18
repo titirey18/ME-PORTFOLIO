@@ -30,7 +30,7 @@ export const My_proyects = () => {
   Name2.textContent = 'Gallery de Fotos'
   text1.textContent =
     'Las mejores zapatillas del mercado y a un precio increible.'
-  text2.textContent = 'Galeria con una amplia variedad de todo tipos de fotos'
+  text2.textContent = 'Galeria con una amplia variedad de todo tipos de fotos.'
   Button1.textContent = 'View App'
   Button2.textContent = 'View App'
   Link1.href = 'https://cosmic-beijinho-1d1a28.netlify.app/'

@@ -1,0 +1,18 @@
+#Experience {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  height: 300px;
+}
+
+.miexperiencia > h3 {
+  color: var(--color-500);
+  font-size: xx-large;
+}
+
+.miestudios > h3 {
+  color: var(--color-500);
+  font-size: xx-large;
+}

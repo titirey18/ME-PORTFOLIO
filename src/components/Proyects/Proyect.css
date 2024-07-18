@@ -13,6 +13,7 @@
 .divFlex {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -40,13 +41,14 @@
 
 .Vista h4 {
   margin-top: 10px;
-  font-size: 1.5rem;
+  font-size: large;
 }
 
 .Vista p {
   margin-top: 10px;
-  font-size: 1rem;
-  text-align: center;
+  font-size: small;
+  text-align: start;
+  width: 80%;
 }
 
 .Vista button {
@@ -55,10 +57,29 @@
   background-color: var(--color-600);
   color: var(--color-100);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .Vista button:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .Vista {
+    height: 300px;
+    width: 250px;
+  }
+  .Vista img {
+    object-fit: contain;
+  }
+  .Vista h4 {
+    font-size: medium;
+  }
+  .Vista p {
+    font-size: x-small;
+  }
+  .Vista button {
+    padding: 5px 10px;
+  }
 }

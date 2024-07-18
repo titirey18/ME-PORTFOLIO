@@ -1,0 +1,72 @@
+#Contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-500);
+  height: 450px;
+  gap: var(--gap-300);
+  align-items: center;
+  justify-content: center;
+}
+
+#Contact > h4 {
+  padding-top: var(--padding-200);
+  font-size: x-large;
+  text-align: center;
+}
+
+#Contact > p {
+  color: var(--color-400);
+  padding-bottom: var(--padding-100);
+  text-align: center;
+}
+.Contactame {
+  display: grid;
+  gap: var(--gap-200);
+  grid-template-columns: 1fr 1fr;
+}
+
+.Contactame input:nth-child(3),
+.Contactame textarea,
+.Contactame button {
+  grid-column: span 2;
+}
+.Envio {
+  font-size: larger;
+  background-color: var(--color-500);
+  padding-bottom: var(--padding-100);
+  border-bottom: 2px solid var(--color-600);
+}
+.Envio2 {
+  font-size: larger;
+  background-color: var(--color-500);
+  padding-bottom: var(--padding-300);
+  border-bottom: 2px solid var(--color-600);
+}
+.Envio::placeholder,
+.Envio2::placeholder {
+  color: var(--color-400);
+}
+
+.Contactame > button {
+  padding: var(--padding-100);
+  background-color: var(--color-600);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #Contact {
+    padding: 10px;
+    margin-top: 100px;
+  }
+  .Envio,
+  .Envio2 {
+    font-size: small;
+  }
+
+  button {
+    font-size: small;
+  }
+}

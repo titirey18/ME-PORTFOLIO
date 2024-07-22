@@ -13,6 +13,8 @@ export const Bienvenida = () => {
   h1.textContent = 'THIAGO SOUBIELLE'
   h2.textContent = 'Soy un web Developer'
   MEimg.src = 'assets/D748732F-D308-4E91-AF85-20756DC1AC4E.jpg'
+  MEimg.alt = 'Thiago Soubielle'
+  MEimg.title = 'Thiago Soubielle'
 
   Bienvenida.appendChild(Divnombre)
   Divnombre.appendChild(p)

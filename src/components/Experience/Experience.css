@@ -1,18 +1,41 @@
 #Experience {
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
   margin-top: 150px;
-  height: 300px;
+  height: 350px;
 }
 
-.miexperiencia > h3 {
-  color: var(--color-500);
-  font-size: xx-large;
+.Titulos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.Active {
+  color: var(--color-100);
+  text-decoration: underline;
 }
 
-.miestudios > h3 {
-  color: var(--color-500);
+.Titulos > h3 {
+  color: var(--color-100);
   font-size: xx-large;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.miestudios {
+  justify-content: flex-start;
+}
+
+.miexperiencia {
+  align-items: stretch;
+  padding: var(--padding-100);
 }

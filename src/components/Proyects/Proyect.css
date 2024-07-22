@@ -47,6 +47,7 @@
 .Vista p {
   margin-top: 10px;
   font-size: small;
+  color: var(--color-400);
   text-align: start;
   width: 80%;
 }

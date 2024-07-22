@@ -25,7 +25,7 @@ export const headernav = () => {
   Experience.textContent = 'Experience'
   Contact.textContent = 'Contact'
   name.href = '#'
-  About.href = '#About_me'
+  About.href = '#'
   Projects.href = '#Proyects'
   Skills.href = '#Skills'
   Experience.href = '#Experience'

@@ -4,7 +4,7 @@ import { My_contact } from './src/components/Contacto/Contacto'
 import { My_Experience } from './src/components/Experience/Experience'
 import { My_footer } from './src/components/footer/footer'
 import { headernav } from './src/components/header/header'
-import { My_proyects } from './src/components/Proyects/Proyect'
+import { My_projects } from './src/components/Projects/Project'
 import { Mis_Skills } from './src/components/Skills/Skills'
 import './style.css'
 
@@ -19,7 +19,7 @@ const main = () => {
     mainElement.append(Sobre_mi())
     mainElement.append(Mis_Skills())
     mainElement.append(My_Experience())
-    mainElement.append(My_proyects())
+    mainElement.append(My_projects())
     mainElement.append(My_contact())
   } else {
     console.error('Main element not found')

@@ -13,7 +13,7 @@ export const Sobre_mi = () => {
   text2.classList.add('parrafo')
   title.textContent = 'About me'
   text.textContent =
-    'Mi experiencia radica en los coneptos basicos de algunas de las principales tecnologias, como HTML, JavaScript, CSS. Mi intencion es crear aplicaciones web eficientes y faciles de uar. '
+    'Mi experiencia radica en los coneptos basicos de algunas de las principales tecnologias, como HTML, JavaScript, CSS. Mi intencion es crear aplicaciones web eficientes y faciles de usar. '
   text1.textContent =
     ' Si bien disfruto el ambito de la programacion, tambien trato de darle importancia al equilibrio entre el trabajo y la vida personal. Fuera de la programacion soy un amante del futbol, junaterme con mis amigos y de los videojuegos.'
   text2.textContent =
